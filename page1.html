@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html
+  lang="zh-CN"
+  style="
+    --status-bar-height: 0px;
+    --top-window-height: 0px;
+    --window-left: 0px;
+    --window-right: 0px;
+    --window-margin: 0px;
+    --window-top: calc(var(--top-window-height) + 0px);
+    --window-bottom: 0px;
+  "
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>微众银行</title>
+  
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="./style/index.5841170f.css" />
+    <style type="text/css">
+      /*每个页面公共css */
+    </style>
+    <script
+      charset="utf-8"
+      src="./style/pages-index-index.46018153.js"
+    ></script>
+    <style type="text/css">
+      .uni-app--showtabbar uni-page-wrapper {
+        display: block;
+        height: calc(100% - 50px);
+        height: calc(100% - 50px - constant(safe-area-inset-bottom));
+        height: calc(100% - 50px - env(safe-area-inset-bottom));
+      }
+      .uni-app--showtabbar uni-page-wrapper::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 50px;
+        height: calc(50px + constant(safe-area-inset-bottom));
+        height: calc(50px + env(safe-area-inset-bottom));
+      }
+      .uni-app--showtabbar
+        uni-page-head[uni-page-head-type="default"]
+        ~ uni-page-wrapper {
+        height: calc(100% - 44px - 50px);
+        height: calc(
+          100% - 44px - constant(safe-area-inset-top) - 50px -
+            constant(safe-area-inset-bottom)
+        );
+        height: calc(
+          100% - 44px - env(safe-area-inset-top) - 50px -
+            env(safe-area-inset-bottom)
+        );
+      }
+    </style>
+    <style type="text/css">
+      .bg-set[data-v-457be092] {
+        width: 100%;
+        min-height: 1168px;
+      }
+      .but uni-image[data-v-457be092] {
+        width: 267px;
+        height: 73px;
+        position: fixed;
+        margin: auto;
+        bottom: 0;
+        /*底部固定*/
+        left: 0;
+        /*实现div的居中*/
+        right: 0;
+        /*实现div的居中*/
+        text-align: center;
+        /*div的内容居中*/
+        line-height: 41px;
+        /*垂直居中*/
+        /* background-color: red; */
+      }
+      .container[data-v-457be092] {
+        margin: 0;
+        padding: 0;
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <script
+      charset="utf-8"
+      src="./style/pages-jump-jump.32843029.js"
+    ></script>
+    <style type="text/css">
+      .uni-app--showtabbar uni-page-wrapper {
+        display: block;
+        height: calc(100% - 50px);
+        height: calc(100% - 50px - constant(safe-area-inset-bottom));
+        height: calc(100% - 50px - env(safe-area-inset-bottom));
+      }
+      .uni-app--showtabbar uni-page-wrapper::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 50px;
+        height: calc(50px + constant(safe-area-inset-bottom));
+        height: calc(50px + env(safe-area-inset-bottom));
+      }
+      .uni-app--showtabbar
+        uni-page-head[uni-page-head-type="default"]
+        ~ uni-page-wrapper {
+        height: calc(100% - 44px - 50px);
+        height: calc(
+          100% - 44px - constant(safe-area-inset-top) - 50px -
+            constant(safe-area-inset-bottom)
+        );
+        height: calc(
+          100% - 44px - env(safe-area-inset-top) - 50px -
+            env(safe-area-inset-bottom)
+        );
+      }
+    </style>
+    <style type="text/css">
+      @charset "UTF-8";
+   
+      .uni-popup[data-v-79177165] {
+        position: fixed;
+        z-index: 99;
+      }
+      .uni-popup.top[data-v-79177165],
+      .uni-popup.left[data-v-79177165],
+      .uni-popup.right[data-v-79177165] {
+        top: var(--window-top);
+      }
+      .uni-popup .uni-popup__wrapper[data-v-79177165] {
+        display: block;
+        position: relative;
+        /* iphonex 等安全区设置，底部安全区适配 */
+      }
+      .uni-popup .uni-popup__wrapper.left[data-v-79177165],
+      .uni-popup .uni-popup__wrapper.right[data-v-79177165] {
+        padding-top: var(--window-top);
+        flex: 1;
+      }
+      .fixforpc-z-index[data-v-79177165] {
+        z-index: 999;
+      }
+      .fixforpc-top[data-v-79177165] {
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      @charset "UTF-8";
+     
+      .mosowe-canvas-image[data-v-3f72f552] {
+        overflow: hidden;
+      }
+      .mosowe-canvas-image .canvas-wrap-box[data-v-3f72f552] {
+        overflow: hidden;
+        height: 0;
+        width: 0;
+        position: fixed;
+        left: 200%;
+        top: 0;
+      }
+      .mosowe-canvas-image .canvas-wrap[data-v-3f72f552] {
+        overflow: hidden;
+        height: 0;
+        width: 0;
+      }
+    </style>
+    <style type="text/css">
+      .container[data-v-2a1ce788] {
+        background-color: #ff576b;
+        margin: 0;
+        padding: 0;
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+      }
+      .head[data-v-2a1ce788] {
+        height: 536px;
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .head_img[data-v-2a1ce788] {
+        height: 478px;
+        width: 100%;
+      }
+      .head_img2[data-v-2a1ce788] {
+        height: 115px;
+        width: 349px;
+        margin-top: -52px;
+      }
+      .jump_items[data-v-2a1ce788] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .item[data-v-2a1ce788] {
+        margin-top: 10px;
+        width: 351px;
+        height: 166px;
+        background-size: cover;
+        /* margin-bottom: 40rpx; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .jsign[data-v-2a1ce788] {
+        width: 47px;
+        height: 47px;
+        margin-top: 20px;
+      }
+      .jump_but[data-v-2a1ce788] {
+        width: 250px;
+        height: 46px;
+        margin-top: 4px;
+      }
+      .uni-popup__wrapper.uni-custom.center
+        .uni-popup__wrapper-box[data-v-2a1ce788] {
+        background-color: initial;
+        position: relative;
+        max-width: 80%;
+        max-height: 80%;
+        overflow-y: visible;
+        .popup {
+          width: 100%;
+          .icon-close {
+            display: block;
+            text-align: right;
+            margin-right: -31px;
+          }
+          .QRcode {
+            width: 234px;
+            display: block;
+          }
+          .btn-savecode {
+            margin: 10px 52px;
+            border-radius: 26px;
+            font-size: 15px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body class="uni-body pages-jump-jump">
+    <noscript><strong>Please enable JavaScript to continue.</strong></noscript
+    ><uni-app class="uni-app--maxwidth"
+      ><uni-page data-page="pages/jump/jump"
+        ><!----><uni-page-refresh
+          ><div class="uni-page-refresh" style="margin-top: 0px">
+            <div class="uni-page-refresh-inner">
+              <svg
+                fill="#2BD009"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="uni-page-refresh__icon"
+              >
+                <path
+                  d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+                ></path>
+                <path d="M0 0h24v24H0z" fill="none"></path></svg
+              ><svg
+                width="24"
+                height="24"
+                viewBox="25 25 50 50"
+                class="uni-page-refresh__spinner"
+              >
+                <circle
+                  stroke="#2BD009"
+                  cx="50"
+                  cy="50"
+                  r="20"
+                  fill="none"
+                  stroke-width="4"
+                  stroke-miterlimit="10"
+                  class="uni-page-refresh__path"
+                ></circle>
+              </svg>
+            </div></div></uni-page-refresh
+        ><uni-page-wrapper
+          ><uni-page-body
+            ><uni-view data-v-2a1ce788="" class="container"
+              ><uni-view data-v-2a1ce788="" class="head"
+                ><uni-image data-v-2a1ce788="" class="head_img"
+                  ><div
+                    style="
+                      background-image: url('./images/jump_head.png');
+                      background-position: 0% 0%;
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat;
+                    "
+                  ></div>
+                  <!----><img
+                    src="./style/jump_head.png"
+                    draggable="false" /></uni-image
+                ><uni-image data-v-2a1ce788="" class="head_img2"
+                  ><div
+                    style="
+                      background-image: url('./images/jump_head2.png');
+                      background-position: 0% 0%;
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat;
+                    "
+                  ></div>
+                  <!----><img
+                    src="./style/jump_head2.png"
+                    draggable="false" /></uni-image></uni-view
+              ><!----><uni-view
+                data-v-3f72f552=""
+                data-v-2a1ce788=""
+                class="mosowe-canvas-image"
+                ><uni-view data-v-3f72f552="" class="slot-view"></uni-view
+                ><uni-view data-v-3f72f552="" class="canvas-wrap-box"
+                  ><uni-canvas
+                    data-v-3f72f552=""
+                    canvas-id="canvas"
+                    class="canvas-wrap"
+                    style="width: 300px; height: 300px"
+                    ><canvas width="900" height="900"></canvas>
+                    <div
+                      style="
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                      "
+                    ></div>
+                    <uni-resize-sensor
+                      ><div><div></div></div>
+                      <div><div></div></div></uni-resize-sensor></uni-canvas
+                  ><uni-canvas
+                    data-v-3f72f552=""
+                    canvas-id="canvas-arc"
+                    class="canvas-wrap"
+                    style="width: 100px; height: 100px"
+                    ><canvas width="300" height="300"></canvas>
+                    <div
+                      style="
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                      "
+                    ></div>
+                    <uni-resize-sensor
+                      ><div><div></div></div>
+                      <div>
+                        <div></div></div></uni-resize-sensor></uni-canvas></uni-view></uni-view
+              ><uni-view data-v-2a1ce788="" class="jump_items"
+                ><uni-view
+                  data-v-2a1ce788=""
+                  class="item"
+                  style="background-image: url('./images/j0.png')"
+                  ><uni-image data-v-2a1ce788="" class="jsign"
+                    ><div
+                      style="
+                        background-image: url('./images/jsign0.png');
+                        background-position: 0% 0%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <!----><img
+                      src="./style/jsign0.png"
+                      draggable="false" /></uni-image
+                  >  <a href="https://sme.kcbebank.com/marketing/share.html?redirect_uri=https%3A%2F%2Fsme.kcbebank.com%2Fsme%3FinviterUserNo%3DUR99420582310858753%26channelNo%3DWECHAT_H5%26channelCode%3D9920110606b9%26inviterChannelCode%3D9920110606b9%26timestamp%3DZB43%252FGGXqtU5ydPmOMb4XkOBMOeVScTx2shleEsC6%252BA%253D%26actCode%3DorgActCode%26referenceOpenId%3DoMHYr5uhGMteFdGPW35WRZ8zypIQ"><uni-view data-v-2a1ce788="" class="uni-form-right"
+                    ><uni-image data-v-2a1ce788="" class="jump_but"
+                      ><div
+                        style="
+                          background-image: url('./images/jump_but.png');
+                          background-position: 0% 0%;
+                          background-size: 100% 100%;
+                          background-repeat: no-repeat;
+                        "
+                      ></div>
+                      <!---->
+					<img
+                        src="./style/jump_but.png"
+                        draggable="false" /></uni-image></uni-view
+                  ></a><uni-text
+                    data-v-2a1ce788=""
+                    style="
+                      color: rgb(204, 204, 204);
+                      font-weight: bold;
+                      margin-top: 6px;
+                    "
+                    ><span>天津资方（金城银行）</span></uni-text
+                  ></uni-view
+                ><uni-view
+                  data-v-2a1ce788=""
+                  class="item"
+                  style="background-image: url('./images/j1.png')"
+                  ><uni-image data-v-2a1ce788="" class="jsign"
+                    ><div
+                      style="
+                        background-image: url('./images/jsign1.png');
+                        background-position: 0% 0%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <!----><img
+                      src="./style/jsign1.png"
+                      draggable="false" /></uni-image
+                  ><a href="https://www.keyike.com/kesurong/linear-chain/loan-all?param=JTdCJTIyYWlkJTIyJTNBJTIyMGZmZDIyZWZlMzQ3YmRlMGE1ODVmMDExZGI4MmY2MDAlMjIlMkMlMjJsb2dvJTIyJTNBMiUyQyUyMnRpbWUlMjIlM0ExNjgzMzQxMjkyOTgzJTJDJTIybGluZWFyU2VyaWFsJTIyJTNBJTIyYnFvdCUyMiUyQyUyMm5hbWUlMjIlM0ElMjIlRTQlQkMlOTclRTklODIlQTYlRTklOTMlQjYlRTglQTElOEMtJUU0JUJDJTk3JUU1JTk1JTg2JUU4JUI0JUI3JUVGJUJDJTg4JUU0JUJDJTgxJUU0JUI4JTlBJUU3JTg5JTg4JUVGJUJDJTg5JTIyJTJDJTIyaWQlMjIlM0ElMjJlN2YxODFhMmNkZDE0ZGJlOGNlYjZjMDgyMGJmYmJhYiUyMiU3RA%3D%3D&serial=bqot"><uni-view data-v-2a1ce788="" class="uni-form-right"
+                    ><uni-image data-v-2a1ce788="" class="jump_but"
+                      ><div
+                        style="
+                          background-image: url('./images/jump_but.png');
+                          background-position: 0% 0%;
+                          background-size: 100% 100%;
+                          background-repeat: no-repeat;
+                        "
+                      ></div>
+                      <!----><img
+                        src="./style/jump_but.png"
+                        draggable="false" /></uni-image></uni-view
+                  ></a><uni-text
+                    data-v-2a1ce788=""
+                    style="
+                      color: rgb(204, 204, 204);
+                      font-weight: bold;
+                      margin-top: 6px;
+                    "
+                    ><span>武汉银行资方 (众邦银行) </span></uni-text
+                  ></uni-view
+                ><uni-view
+                  data-v-2a1ce788=""
+                  class="item"
+                  style="background-image: url('./images/j2.png')"
+                  ><uni-image data-v-2a1ce788="" class="jsign"
+                    ><div
+                      style="
+                        background-image: url('./images/jsign2.png');
+                        background-position: 0% 0%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <!----><img
+                      src="./style/jsign2.png"
+                      draggable="false" /></uni-image
+                  ><a href="https://www.keyike.com/kesurong/linear-chain/loan-all?param=JTdCJTIyYWlkJTIyJTNBJTIyMGZmZDIyZWZlMzQ3YmRlMGE1ODVmMDExZGI4MmY2MDAlMjIlMkMlMjJsb2dvJTIyJTNBMiUyQyUyMnRpbWUlMjIlM0ExNjgzMzQ0NTA5NDA4JTJDJTIybGluZWFyU2VyaWFsJTIyJTNBJTIydnlrdCUyMiUyQyUyMm5hbWUlMjIlM0ElMjIlRTYlOTYlQjAlRTclQkQlOTElRTklOTMlQjYlRTglQTElOEMtJUU1JUE1JUJEJUU0JUJDJTgxZSVFOCVCNCVCNyUyMiUyQyUyMmlkJTIyJTNBJTIyYWJlYTNmNDdiNmQxNDdmOWIwYzYyMmRlYTA0MjVjOTUlMjIlN0Q%3D&serial=vykt"><uni-view data-v-2a1ce788="" class="uni-form-right"
+                    ><uni-image data-v-2a1ce788="" class="jump_but"
+                      ><div
+                        style="
+                          background-image: url('./images/jump_but.png');
+                          background-position: 0% 0%;
+                          background-size: 100% 100%;
+                          background-repeat: no-repeat;
+                        "
+                      ></div>
+                      <!----><img
+                        src="./style/jump_but.png"
+                        draggable="false" /></uni-image></uni-view
+                  ></a><uni-text
+                    data-v-2a1ce788=""
+                    style="
+                      color: rgb(204, 204, 204);
+                      font-weight: bold;
+                      margin-top: 6px;
+                    "
+                    ><span>四川资方 (新网银行) </span></uni-text
+                  ></uni-view
+                ><uni-view
+                  data-v-2a1ce788=""
+                  class="item"
+                  style="background-image: url('./images/j3.png')"
+                  ><uni-image data-v-2a1ce788="" class="jsign"
+                    ><div
+                      style="
+                        background-image: url('./images/jsign3.png');
+                        background-position: 0% 0%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <!----><img
+                      src="./style/jsign3.png"
+                      draggable="false" /></uni-image
+                  ><a href="http://unifyproduct.webank.club/?channelCode=GN0060&productId=1"><uni-view data-v-2a1ce788="" class="uni-form-right"
+                    ><uni-image data-v-2a1ce788="" class="jump_but"
+                      ><div
+                        style="
+                          background-image: url('./images/jump_but.png');
+                          background-position: 0% 0%;
+                          background-size: 100% 100%;
+                          background-repeat: no-repeat;
+                        "
+                      ></div>
+                      <!----><img
+                        src="./style/jump_but.png"
+                        draggable="false" /></uni-image></uni-view
+                  ></a><uni-text
+                    data-v-2a1ce788=""
+                    style="
+                      color: rgb(204, 204, 204);
+                      font-weight: bold;
+                      margin-top: 6px;
+                    "
+                    ><span>重庆资方 (富民银行) </span></uni-text
+                  ></uni-view
+                ><uni-view
+                  data-v-2a1ce788=""
+                  class="item"
+                  style="background-image: url('./images/j4.png')"
+                  ><uni-image data-v-2a1ce788="" class="jsign"
+                    ><div
+                      style="
+                        background-image: url('./images/jsign4.png');
+                        background-position: 0% 0%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <!----><img
+                      src="./style/jsign4.png"
+                      draggable="false" /></uni-image
+                  ><a href="https://www.keyike.com/kesurong/linear-chain/loan-all?param=JTdCJTIyYWlkJTIyJTNBJTIyMGZmZDIyZWZlMzQ3YmRlMGE1ODVmMDExZGI4MmY2MDAlMjIlMkMlMjJsb2dvJTIyJTNBMiUyQyUyMnRpbWUlMjIlM0ExNjgzMzQwODgyMzkyJTJDJTIybGluZWFyU2VyaWFsJTIyJTNBJTIyd3ZtcSUyMiUyQyUyMm5hbWUlMjIlM0ElMjIlRTglOEIlOEYlRTUlQUUlODElRTklOTMlQjYlRTglQTElOEMtJUU1JUJFJUFFJUU1JTk1JTg2JUU4JUI0JUI3JTIyJTJDJTIyaWQlMjIlM0ElMjJjNzg5OTQxZDg4Yzg0YzYxOTNiZTM2NGNlMTg5OTVmNSUyMiU3RA%3D%3D&serial=wvmq"><uni-view data-v-2a1ce788="" class="uni-form-right"
+                    ><uni-image data-v-2a1ce788="" class="jump_but"
+                      ><div
+                        style="
+                          background-image: url('./images/jump_but.png');
+                          background-position: 0% 0%;
+                          background-size: 100% 100%;
+                          background-repeat: no-repeat;
+                        "
+                      ></div>
+                      <!----><img
+                        src="./style/jump_but.png"
+                        draggable="false" /></uni-image></uni-view
+                  ></a><uni-text
+                    data-v-2a1ce788=""
+                    style="
+                      color: rgb(204, 204, 204);
+                      font-weight: bold;
+                      margin-top: 6px;
+                    "
+                    ><span>江苏资方 (苏宁银行) </span></uni-text
+                  ></uni-view
+                ><uni-view
+                  data-v-2a1ce788=""
+                  class="item"
+                  style="background-image: url('./images/j5.png')"
+                  ><uni-image data-v-2a1ce788="" class="jsign"
+                    ><div
+                      style="
+                        background-image: url('./images/jsign5.png');
+                        background-position: 0% 0%;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <!----><img
+                      src="./style/jsign5.png"
+                      draggable="false" /></uni-image
+                  ><a href="https://aaph.nbcb.com.cn/blcs/#/LoanManagement/HomePage?id=QR1682055767184&VNK=9605ea69"><uni-view data-v-2a1ce788="" class="uni-form-right"
+                    ><uni-image data-v-2a1ce788="" class="jump_but"
+                      ><div
+                        style="
+                          background-image: url('./images/jump_but.png');
+                          background-position: 0% 0%;
+                          background-size: 100% 100%;
+                          background-repeat: no-repeat;
+                        "
+                      ></div>
+                      <!----><img
+                        src="./style/jump_but.png"
+                        draggable="false" /></uni-image></uni-view
+                  ></a>
+				  <uni-text
+				    data-v-2a1ce788=""
+				    style="
+				      color: rgb(204, 204, 204);
+				      font-weight: bold;
+				      margin-top: 6px;
+				    "
+				    ><span>宁波资方 (宁波银行) </span>
+				  </uni-view
+            >
+			
+			<uni-view
+			        data-v-2a1ce788=""
+			        class="item"
+			        style="background-image: url('./images/j6.png')"
+			        ><uni-image data-v-2a1ce788="" class="jsign"
+			          ><div
+			            style="
+			              background-image: url('./images/jsign6.png');
+			              background-position: 0% 0%;
+			              background-size: 100% 100%;
+			              background-repeat: no-repeat;
+			            "
+			          ></div>
+			          <!----><img
+			            src="./style/jsign7.png"
+			            draggable="false" /></uni-image
+			        ><a href="#"><uni-view data-v-2a1ce788="" class="uni-form-right"
+			          ><uni-image data-v-2a1ce788="" class="jump_but"
+			            ><div
+			              style="
+			                background-image: url('./images/jump_but.png');
+			                background-position: 0% 0%;
+			                background-size: 100% 100%;
+			                background-repeat: no-repeat;
+			              "
+			            ></div>
+			            <!----><img
+			              src="./style/jump_but.png"
+			              draggable="false" /></uni-image></uni-view
+			        ></a>
+							  <uni-text
+							    data-v-2a1ce788=""
+							    style="
+							      color: rgb(204, 204, 204);
+							      font-weight: bold;
+							      margin-top: 6px;
+							    "
+							    ><span>其他银行</span>
+							  </uni-view
+			  >
+						
+						</uni-page-body
+			>
+			
+			</uni-page-body
+          >
+		  
+		  
+		  </uni-page-wrapper
+        ></uni-page
+      ><!----><!----><uni-actionsheet
+        ><div
+          class="uni-mask uni-actionsheet__mask"
+          style="display: none"
+        ></div>
+        <div class="uni-actionsheet">
+          <div class="uni-actionsheet__menu">
+            <!----><!---->
+            <div style="max-height: 260px; overflow: hidden">
+              <div style="transform: translateY(0px) translateZ(0px)"></div>
+            </div>
+          </div>
+          <div class="uni-actionsheet__action">
+            <div class="uni-actionsheet__cell" style="color: rgb(0, 0, 0)">
+              取消
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <!----></uni-actionsheet
+      ><uni-modal style="display: none"
+        ><div class="uni-mask"></div>
+        <div class="uni-modal">
+          <!---->
+          <div class="uni-modal__bd"></div>
+          <div class="uni-modal__ft">
+            <div
+              class="uni-modal__btn uni-modal__btn_default"
+              style="color: rgb(0, 0, 0)"
+            >
+              Cancel
+            </div>
+            <div
+              class="uni-modal__btn uni-modal__btn_primary"
+              style="color: rgb(0, 122, 255)"
+            >
+              OK
+            </div>
+          </div>
+        </div>
+        <!----></uni-modal
+      ><!----><!----></uni-app
+    >
+    <script src="./style/chunk-vendors.6d3082a2.js"></script>
+    <script src="./style/index.d7ae6040.js"></script>
+    <div
+      style="
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 0px;
+        height: 0px;
+        z-index: -1;
+        overflow: hidden;
+        visibility: hidden;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-top);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 400px;
+            height: 400px;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-top);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 250%;
+            height: 250%;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-left);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 400px;
+            height: 400px;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-left);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 250%;
+            height: 250%;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-right);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 400px;
+            height: 400px;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-right);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 250%;
+            height: 250%;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-bottom);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 400px;
+            height: 400px;
+          "
+        ></div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100px;
+          height: 200px;
+          box-sizing: border-box;
+          overflow: hidden;
+          padding-bottom: env(safe-area-inset-bottom);
+        "
+      >
+        <div
+          style="
+            transition: all 0s ease 0s;
+            animation: 0s ease 0s 1 normal none running none;
+            width: 250%;
+            height: 250%;
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
